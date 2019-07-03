@@ -11,7 +11,7 @@ app.post('/voice', (request, response) => {
   const twiml = new VoiceResponse();
   twiml.play({
       loop: 1
-  }, 'http://rave.danhett.com/yes.mp3');
+  }, 'https://dl.dropbox.com/s/obu1f2830ffmf41/HOTLINE_Bells.mp3?dl=1');
 
   response.type('text/xml');
   response.send(twiml.toString());
